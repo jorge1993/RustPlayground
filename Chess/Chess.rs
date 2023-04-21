@@ -1,5 +1,6 @@
 use std::io;
 
+mod King;
 // pieces
 const KING_WHITE: char = '\u{2654}';
 const QUEEN_WHITE: char = '\u{2655}';
@@ -17,6 +18,7 @@ const KNIGHT_BLACK: char = '\u{265E}';
 const PAWN_BLACK: char = '\u{265F}';
 
 const EMPTY_CASE: char = '·';
+
 
 fn show_board(board: &mut Vec<Vec<char>>) {
     print!(" ");
